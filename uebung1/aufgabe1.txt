@@ -1,0 +1,3 @@
+Jeder Einzelne wird mit dem dahinter verglichen, und wenn der da hinter kleiner ist, 
+kommt der vorige eine Position nach hinten. Das geht so lange, bis der Hintere größer ist.
+Das geht so lange, bis alle keinen kleineren mehr hinter einen haben. 
