@@ -1,8 +1,8 @@
-def chop():
-  myList.pop(0)
-  myList.pop() # letztes element
+def chop(myotherlist):
+  myotherlist.pop(0)
+  myotherlist.pop() # letztes element
 
 myList = [1,2,3,4,5,6]
 print(myList)
-chop()
+chop(myList)
 print(myList)
