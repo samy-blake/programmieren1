@@ -1,15 +1,22 @@
-'''
-Nicht vollständig!
-'''
 
+def maxElementInList(list, smallerThan):
+  tmpElement = 0
+  for element in list:
+    if element > tmpElement:
+      tmpElement = element
+
+      if smallerThan > 0 and element < smallerThan:
+        tmpElement = element
+
+  return tmpElement
 
 def mysort(myList):
   resultList = []
-  tmpElement = None
+  tmpElement = 0
 
   for i in range(0, (len(myList) - 1)):
     element = myList[i]
-    if 
+    print(maxElementInList(element, tmpElement)) 
 
 
 def main():

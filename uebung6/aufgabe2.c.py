@@ -1,6 +1,6 @@
 
 def is_sorted(list):
-  sortedList = list[0:] # kopiert die ganze liste in eine neue Variable
+  sortedList = list.copy() # kopiert die ganze liste in eine neue Variable
   sortedList.sort()
   return list == sortedList
 
