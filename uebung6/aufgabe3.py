@@ -1,26 +1,22 @@
 
-def maxElementInList(list, smallerThan):
-  tmpElement = 0
-  for element in list:
-    if element > tmpElement:
-      tmpElement = element
+def mysort(sortedList):
 
-      if smallerThan > 0 and element < smallerThan:
-        tmpElement = element
-
-  return tmpElement
-
-def mysort(myList):
-  resultList = []
-  tmpElement = 0
-
-  for i in range(0, (len(myList) - 1)):
-    element = myList[i]
-    print(maxElementInList(element, tmpElement)) 
+  for outIndex in range(len(sortedList) - 1):
+    rangeForSearch = len(sortedList) - outIndex - 1
+    
+    for searchIndex in range(rangeForSearch):
+      
+      if sortedList[searchIndex] > sortedList[searchIndex + 1]:
+        # vertauschen von den beiden Werten
+        tmp = sortedList[searchIndex] 
+        sortedList[searchIndex] = sortedList[searchIndex + 1]
+        sortedList[searchIndex + 1] = tmp
+  
+  return sortedList
 
 
 def main():
-  myList = [5,6,1,3,7,3,0,5]
-  print(mysort(myList))
+  sortedList = [5,6,1,3,7,3,0,5]
+  print(mysort(sortedList))
 
 main()
