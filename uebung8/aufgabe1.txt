@@ -1,0 +1,13 @@
+1.a)
+--> 7
+
+1.b)
+--> 4
+--> 3
+
+1.c)
+--> ERROR (String plus Int)
+
+1.d)
+--> tom
+--> tom
